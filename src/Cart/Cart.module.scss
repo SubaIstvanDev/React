@@ -1,0 +1,46 @@
+@import "../variables.scss";
+
+.cart-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 20rem;
+  overflow: auto;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.actions {
+  text-align: right;
+  button {
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid $color1;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    &:hover,
+    &:active {
+      background-color: $color5;
+      border-color: $color5;
+      color: $color2;
+    }
+  }
+}
+
+.close-button {
+  background-color: transparent;
+  color: $color1;
+}
+
+.order-button {
+  background-color: $color1;
+  color: $color2;
+}
